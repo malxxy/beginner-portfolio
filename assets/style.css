@@ -1,8 +1,22 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 3px;
+    margin: 3px;
 }
 
 main {
     display:flex;
+}
+
+header {
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    position: absolute;
+    right: 10px;
 }
