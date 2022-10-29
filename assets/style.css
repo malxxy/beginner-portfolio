@@ -1,18 +1,36 @@
+:root {
+    --mint: lavender;
+    --shadow: #70867A;
+    --light:#F7FBF9;
+}
+
+/* Universal selectors */
 * {
     padding: 3px;
     margin: 3px;
 }
 
+/* Element selectors */
 main {
     display:flex;
 }
 
 header {
     position: relative;
+    background-color: var(--mint);
 }
 
 header h1 {
     text-align: center;
+    color:white;
+    text-shadow: 1px 1px var(--shadow);
+    padding-top: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family:"Montserrat","Helectiva",sans-serif;
 }
 
 nav li {
@@ -20,3 +38,48 @@ nav li {
     position: absolute;
     right: 10px;
 }
+
+footer {
+    text-align: center;
+    background: lavender;
+    padding: 20px;;
+}
+
+article h2 {
+    background-color: var(--light);
+}
+
+/* Class selectors */
+
+.projects {
+    flex: wrap;
+    padding-top: 10px;
+    border-top: 10px solid lavender;
+    width: 100%;
+    background-color:var(--light);
+}
+
+.work {
+    width: 100%;
+    flex:wrap;
+    border-top: 10px solid lavender;
+    background-color:var(--light);
+}
+
+.about {
+    padding:5px;
+    line-height:1.5fr;
+}
+
+
+/* ID selectors */
+#profile-image {
+    height:404px;
+    width:270px;
+    float:left;
+}
+
+
+/* #about + #profile-image {
+    display: inline;
+} */
