@@ -51,6 +51,11 @@ article h2 {
 
 /* Class selectors */
 
+/* .about-together {
+    display:flex;
+    flex: 1 0 100px;
+} */
+
 .projects {
     flex: wrap;
     padding-top: 10px;
@@ -78,8 +83,3 @@ article h2 {
     width:270px;
     float:left;
 }
-
-
-/* #about + #profile-image {
-    display: inline;
-} */
