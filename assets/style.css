@@ -13,6 +13,10 @@
 /* Element selectors */
 main {
     display:flex;
+    flex:wrap;
+    align-items:stretch;
+    width:100%;
+    flex-direction: column;
 }
 
 header {
@@ -51,10 +55,9 @@ article h2 {
 
 /* Class selectors */
 
-/* .about-together {
-    display:flex;
-    flex: 1 0 100px;
-} */
+.about-together {
+    width: 100%;
+}
 
 .projects {
     flex: wrap;
