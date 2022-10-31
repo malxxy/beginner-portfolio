@@ -37,16 +37,23 @@ h3 {
     font-family:"Montserrat","Helectiva",sans-serif;
 }
 
+h2 {
+    border-bottom: 5px dashed lavender;
+}
+
 nav li {
+    list-style-type:none;
     display: inline;
-    position: absolute;
-    right: 10px;
+}
+
+a {
+    float: right;
 }
 
 footer {
     text-align: center;
     background: lavender;
-    padding: 20px;;
+    padding: 20px;
 }
 
 article h2 {
@@ -82,7 +89,8 @@ article h2 {
 
 /* ID selectors */
 #profile-image {
-    height:404px;
-    width:270px;
+    height: 267px;
+    width: 216px;
     float:left;
+    margin-right: 10px;
 }
