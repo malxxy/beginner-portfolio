@@ -48,6 +48,10 @@ nav li {
 
 a {
     float: right;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10%;
+    border: 3px black;
 }
 
 footer {
@@ -93,4 +97,9 @@ article h2 {
     width: 216px;
     float:left;
     margin-right: 10px;
+}
+
+#gf-image {
+    height: 500px;
+    width: 676px;
 }
