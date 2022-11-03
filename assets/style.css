@@ -13,7 +13,9 @@
 /* Element selectors */
 main {
     display:flex;
-    flex:wrap;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    justify-content:space-between;
     align-items:stretch;
     width:100%;
     flex-direction: column;
@@ -24,6 +26,7 @@ header {
     top:0;
     width:100%;
     margin-top: 0px;
+    border-bottom: 3px dashed black;
 }
 
 header h1 {
@@ -88,6 +91,17 @@ a:hover {
     color: black;
 }
 
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Image transition */
+main img:hover {
+    box-shadow: 10px 10px grey;
+    opacity: .5;
+}
+
 footer {
     text-align: center;
     background: lavender;
@@ -139,8 +153,12 @@ article h2 {
     margin: 10px;
     padding: 10px lavender;
     border: 2px solid black;
+    overflow: scroll;
 }
 
+.resume {
+    margin-left: 20px;
+}
 
 /* ID selectors */
 #profile-image {
@@ -148,16 +166,6 @@ article h2 {
     width: 216px;
     float:left;
     margin-right: 10px;
-}
-
-#gf-image {
-    height: 500px;
-    width: 676px;
-}
-
-#gf-image:hover {
-    box-shadow: 10px 10px grey;
-    opacity: .5;
 }
 
 /* Media Queries */
