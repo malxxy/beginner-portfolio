@@ -1,5 +1,5 @@
 :root {
-    --mint: lavender;
+    --lav: lavender;
     --shadow: #70867A;
     --light:#F7FBF9;
 }
@@ -12,38 +12,38 @@
 
 /* Element selectors */
 main {
-    display:flex;
-    flex-wrap:wrap;
     flex-grow: 1;
     justify-content:space-between;
     align-items:stretch;
     width:100%;
-    flex-direction: column;
 }
 
 header {
-    background-color: var(--mint);
+    background: radial-gradient(at top left,var(--lav),pink);
     top:0;
     width:100%;
     margin-top: 0px;
-    border-bottom: 3px dashed black;
 }
 
 header h1 {
     text-align: center;
     color:white;
-    text-shadow: 1px 1px var(--shadow);
-    padding-top: 15px;
+    text-shadow: 1px 1px #E5B6E7;
+    padding-top: 20px;
     font-family:"georgia","Times New Roman", serif;
 }
 
-h2,
-h3, h4 {
+header h1::selection {
+    background-color: var(--shadow);
+  }
+
+h1, h2,
+h3 {
     font-family:"Montserrat","Helectiva",sans-serif;
 }
 
 h2 {
-    border-bottom: 5px dashed lavender;
+    border-bottom: 5px dashed var(--lav);
     transition-property: color, background-color, padding, text-shadow;
     transition-duration: 0.5s;
     border: 3px solid white;
@@ -56,103 +56,127 @@ h2 {
 /* Transition upon hovering */
 h2:hover {
     color: white;
-    background: lavender;
+    background: var(--lav);
     padding: 5px 10px;
     text-shadow: 1px 1px var(--shadow);
 }
 
-/* h3 {
-    transition-property: 
+h3 {
+    text-align:center;
+    transition-property: color, background-color, padding;
+    transition-duration: 2s;
+    border-radius: 3%;
 }
 
 h3:hover {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
 
-} */
+h4 {
+    color:white;
+    font-family:"georgia","Times New Roman", serif;
+    text-shadow: 1px 1px #E5B6E7;
+}
 
 nav li {
     list-style-type:none;
     display: inline;
 }
 
-a {
-    float: right;
-    background-color: white;
-    padding: 5px;
-    border-radius: 10%;
-    border: 3px dashed var(--light);
-    margin: -30px 5px 10px 5px;
-    transition-property: padding;
-    transition-duration: 1s;
-}
-
-/* Nav link transition */
-a:hover {
-    padding: 10px;
-    color: black;
-}
-
-main img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Image transition */
-main img:hover {
-    box-shadow: 10px 10px grey;
-    opacity: .5;
-}
-
-footer {
-    text-align: center;
-    background: lavender;
-    padding: 20px;
+article {
+    background-color: var(--lav);
 }
 
 article h2 {
     background-color: var(--light);
     position:relative;
-    margin: -20px auto 0 auto;
     border: 3px solid white;
     border-radius:5%;
     padding: 2px 5px;
     width:fit-content;
 }
 
-/* Class selectors */
+p::selection {
+    background-color: var(--shadow);
+  }
 
-.center {
-    text-align:center;
+main img {
+    max-width: 95%;
+    height: auto;
+    transition-duration: 1s;
+    border-radius: 3%;
+}
+
+/* Image transition */
+main img:hover {
+    opacity: .5;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background: var(--lav);
+    padding: 20px;
+}
+
+
+
+/* Class selectors */
+.nav-menu {
+    float: right;
+    color: white;
+    background-color: var(--lav);
+    padding: 7px 10px;
+    border-radius: 10%;
+    margin: -30px 5px 10px 5px;
+    transition-property: padding;
+    transition-duration: 1s;
+}
+
+/* Nav link transition */
+.nav-menu:hover {
+    padding: 10px;
+    color: black;
+}
+.about {
+    padding:5px;
+    line-height:1.5fr;
 }
 
 .about-together {
     width: 100%;
-    background-color: var(--light);
+    background:radial-gradient(var(--light),var(--lav),pink);
 }
 
 .projects {
-    flex: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 10px;
-    border-top: 10px solid lavender;
     width: 100%;
     background-color:var(--light);
 }
 
 .work {
     width: 100%;
-    flex:wrap;
-    border-top: 10px solid lavender;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 10px solid varvar(--lav);
     background-color:var(--light);
 }
 
-.about {
-    padding:5px;
-    line-height:1.5fr;
-}
-
+/* THIS IS WHERE WE ADD STYLE!!! */
 .flexbox {
-    margin: 10px;
-    padding: 10px lavender;
-    border: 2px solid black;
+    width: 48%;
+    flex-wrap: wrap;
+    flex: 2 0 auto;
+    justify-content: space-evenly;
+    margin: 5px;
+    border: 5px solid var(--lav);
+    border-radius: 3%;
     overflow: scroll;
 }
 
@@ -166,6 +190,13 @@ article h2 {
     width: 216px;
     float:left;
     margin-right: 10px;
+    transition-duration: 2s;
+    border-radius: 5%;
+}
+
+
+#profile-image:hover {
+    transform: scale(1.1);
 }
 
 /* Media Queries */
