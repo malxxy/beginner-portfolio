@@ -78,7 +78,7 @@ h2 {
 /* Transition upon hovering */
 h2:hover {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(215,22,213,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(60,181,122,0.8926164215686274) 0%, rgba(203,0,255,0.8393951330532212) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 5px 10px;
