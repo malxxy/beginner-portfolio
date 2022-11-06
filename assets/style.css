@@ -6,16 +6,23 @@
 
 /* Universal selectors */
 * {
-    padding: 2px;
-    margin: 3px;
+    padding: 1px;
+    margin: 1px;
 }
 
 /* Element selectors */
+html {
+    background-color: var(--lav);
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 main {
     flex-grow: 1;
     justify-content:space-between;
     align-items:stretch;
     width:100%;
+    background: var(--light);
 }
 
 header {
@@ -54,6 +61,7 @@ header h1:hover {
 h1, h2,
 h3 {
     font-family:"Montserrat","Helectiva",sans-serif;
+    padding: 5px;
 }
 
 h2 {
@@ -156,10 +164,6 @@ footer {
     font-size: 20px;
 }
 
-/* .nav-menu:visited {
-    color: black;
-} */
-
 .about-together {
     width: 100%;
     background:radial-gradient(var(--light),var(--lav),pink);
@@ -167,14 +171,17 @@ footer {
     border: 2px solid var(--lav);
     padding:5px;
     line-height:1.5fr;
+    min-height: 269px;
+    font-size: 18px;
 }
 
 .checkout {
     color:rgb(16, 15, 15);
     font-family:"georgia","Times New Roman", serif;
-    text-shadow: 1px 1px #E5B6E7;
     text-align: center;
-    background-color: radial-gradient(at top left,pink,var(--lav));
+    background-color: var(--light);
+    font-size: 22px;
+    padding: 5px;
 }
 
 .projects {
@@ -183,7 +190,7 @@ footer {
     justify-content: space-between;
     padding-top: 10px;
     width: 100%;
-    background-color:var(--light);
+    background-color:var(--lav);
 }
 
 .work {
