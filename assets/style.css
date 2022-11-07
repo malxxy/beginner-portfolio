@@ -87,16 +87,20 @@ h2:hover {
 
 h3 {
     text-align:center;
-    transition-property: color, background-color, padding;
+    transition-property: color, background-color, padding, font-size, -webkit-text-stroke;
     transition-duration: 2s;
     border-radius: 3%;
 }
 
 h3:hover {
-    background-color: black;
-    color: white;
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 14%, rgba(60,181,122,0.8926164215686274) 50%, rgba(200,102,223,1) 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
     padding: 10px;
     border-radius: 10%;
+    font-size: 24px;
 }
 
 nav li {
@@ -130,6 +134,7 @@ p::selection {
 main img {
     max-width: 95%;
     height: auto;
+    margin: 4px;
 }
 
 main img:hover {
@@ -141,8 +146,6 @@ footer {
     background: var(--lav);
     padding: 20px;
 }
-
-
 
 /* Class selectors */
 .nav-menu {
@@ -175,14 +178,14 @@ footer {
     font-size: 18px;
 }
 
-.checkout {
+/* .checkout {
     color:rgb(16, 15, 15);
     font-family:"georgia","Times New Roman", serif;
     text-align: center;
     background-color: var(--light);
     font-size: 22px;
     padding: 5px;
-}
+} */
 
 .projects {
     display: flex;
@@ -204,12 +207,12 @@ footer {
 
 /* THIS IS WHERE WE ADD STYLE!!! */
 .flexbox {
-    width: 48%;
+    width: 46%;
     flex-wrap: wrap;
     flex: 2 0 auto;
     justify-content: space-evenly;
     margin: 5px;
-    border: 5px solid var(--lav);
+    border: 5px solid rgb(33, 33, 33);
     border-radius: 3%;
     overflow: scroll;
     transition-duration: 1s;
@@ -218,7 +221,17 @@ footer {
 
 /* Card transition upon hovering */
 .flexbox:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+}
+
+.link {
+    margin: 10px;
+    padding: 5px;
+}
+
+.link::selection {
+    color: white;
+    background-color:var(--light);
 }
 
 .resume {
@@ -251,6 +264,18 @@ footer {
        grid-row-gap: 30px;
      }
    }
+
+@media screen and (max-width:768px) {
+    .nav-menu {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-bottom: 30px;
+    }
+}
  
  /* Media Queries for Mobile */
  @media screen and (max-width:576px) {
