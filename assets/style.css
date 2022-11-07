@@ -41,6 +41,7 @@ header h1 {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,60,157,1) 0%, rgba(0,212,255,1) 100%);
     -webkit-background-clip: text;
+        background-clip:text;
     -webkit-text-fill-color: transparent;
     transition-duration: 2s;
 }
@@ -54,6 +55,7 @@ header h1:hover {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(60,181,122,0.8926164215686274) 0%, rgba(203,0,255,0.8393951330532212) 100%);
     -webkit-background-clip: text;
+        background-clip:text;
     -webkit-text-fill-color: transparent;
     font-size:36px;
 }
@@ -80,9 +82,10 @@ h2:hover {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(60,181,122,0.8926164215686274) 0%, rgba(203,0,255,0.8393951330532212) 100%);
     -webkit-background-clip: text;
+        /* Added line below to remedy error "Also define standard property 'background-clip' for compatibility */
+        background-clip:text;
     -webkit-text-fill-color: transparent;
     padding: 5px 10px;
-    /* ADD HOLOGRAPHIC FEATURE HERE */
 }
 
 h3 {
@@ -96,6 +99,7 @@ h3:hover {
     background: rgb(10,10,10);
     background: linear-gradient(90deg, rgba(10,10,10,1) 14%, rgba(60,181,122,0.8926164215686274) 50%, rgba(200,102,223,1) 85%);
     -webkit-background-clip: text;
+        background-clip:text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px white;
     padding: 10px;
@@ -205,7 +209,7 @@ footer {
     background-color:var(--light);
 }
 
-/* THIS IS WHERE WE ADD STYLE!!! */
+/* THIS IS WHERE WE ADD STYLE TO EACH CARD */
 .flexbox {
     width: 46%;
     flex-wrap: wrap;
@@ -217,6 +221,7 @@ footer {
     overflow: scroll;
     transition-duration: 1s;
     border-radius: 3%;
+    /* Add holographic feature in future */
 }
 
 /* Card transition upon hovering */
@@ -253,6 +258,14 @@ footer {
     transform: scale(1.1);
 }
 
+#large-img {
+    width:95%;
+}
+
+#bold {
+    font-weight: 900;
+}
+
 /* Media Queries */
 
 /* Media Queries for Tablet */
@@ -265,13 +278,14 @@ footer {
      }
    }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1059px) {
     .nav-menu {
         padding: 10px;
+        margin: 5px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1059px) {
     header {
         padding-bottom: 30px;
     }
