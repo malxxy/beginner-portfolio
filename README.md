@@ -1,4 +1,4 @@
-# orange-mule
+# Beginner Portfolio
 Personal Portfolio to showcase software development skills
 
 
@@ -12,7 +12,7 @@ N/A
 
 ## Usage
 
-To access this website, go to GITHUB PAGES LINK
+To access this website, click [Here](https://malxxy.github.io/beginner-portfolio/).
 <br>
 About section: ![about section](./assets/about-section.png)
 <br>
