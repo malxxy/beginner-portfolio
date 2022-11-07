@@ -13,10 +13,12 @@ N/A
 ## Usage
 
 To access this website, go to GITHUB PAGES LINK
-
-Insert screenshot of website.
-Change link to show image
-![alt text](assets/images/screenshot.png)
+<br>
+About section: ![about section](./assets/about-section.png)
+<br>
+Project section: ![project section](./assets/project-section.png)
+<br>
+Project section example of hover property: ![hover h2 effect](./assets/project-2.png)
 
 ## Credits
 
